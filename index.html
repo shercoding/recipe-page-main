@@ -13,17 +13,7 @@
     />
 
     <title>Frontend Mentor | Recipe page</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
+ 
   </head>
   <body>
     <main>
@@ -42,39 +32,126 @@
       <section class="sec-1">
         <div class="container">
           <h1>Preparation time</h1>
-
           <ul>
-            <li>Total: Approximately 10 minutes</li>
-            <li>Preparation: 5 minutes</li>
-            <li>Cooking: 5 minutes</li>
+            <li><strong>Total</strong>: Approximately 10 minutes</li>
+            <li><strong>Preparation</strong>: 5 minutes</li>
+            <li><strong>Cooking</strong> 5 minutes</li>
           </ul>
         </div>
       </section>
-    </main>
 
-    <!--  -->
+      <section class="sec-2">
+        <div class="container">
+          <h1>Ingredients</h1>
+          <ul>
+            <li>2-3 large eggs</li>
+            <li>Salt, to taste</li>
+            <li>Pepper, to taste</li>
+            <li>1 tablespoon of
+    butter or oil</li>
+            <li>Optional fillings: cheese, diced vegetables, cooked meats,
+    herbs</li>
+          </ul>
+        </div>
+      </section>
 
-    Ingredients 2-3 large eggs Salt, to taste Pepper, to taste 1 tablespoon of
-    butter or oil Optional fillings: cheese, diced vegetables, cooked meats,
-    herbs Instructions Beat the eggs: In a bowl, beat the eggs with a pinch of
+      <section class="sec-3">
+        <div class="container">
+          <h1>Instructions</h1>
+          <ul>
+            <li><strong>Beat the eggs</strong> In a bowl, beat the eggs with a pinch of
     salt and pepper until they are well mixed. You can add a tablespoon of water
-    or milk for a fluffier texture. Heat the pan: Place a non-stick frying pan
+    or milk for a fluffier texture.</li>
+            <li> <strong>Heat the pan</strong>: Place a non-stick frying pan
     over medium heat and add butter or oil. Cook the omelette: Once the butter
     is melted and bubbling, pour in the eggs. Tilt the pan to ensure the eggs
-    evenly coat the surface. Add fillings (optional): When the eggs begin to set
+    evenly coat the surface.</li>
+            <li><strong>Add fillings (optional)</strong>: When the eggs begin to set
     at the edges but are still slightly runny in the middle, sprinkle your
-    chosen fillings over one half of the omelette. Fold and serve: As the
+    chosen fillings over one half of the omelette.</li>
+            <li><strong>Fold and serve</strong>: As the
     omelette continues to cook, carefully lift one edge and fold it over the
-    fillings. Let it cook for another minute, then slide it onto a plate. Enjoy:
-    Serve hot, with additional salt and pepper if needed. Nutrition The table
-    below shows nutritional values per serving without the additional fillings.
-    Calories 277kcal Carbs 0g Protein 20g Fat 22g
+    fillings. Let it cook for another minute, then slide it onto a plate.</li>
+            <li><strong>Enjoy</strong>:
+    Serve hot, with additional salt and pepper if needed.</li>
+          </ul>
+        </div>
+      </section>
 
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+      
+      <section class="sec-4">
+        <div class="container">
+          <h1>Nutrition </h1>
+          <p>The table
+    below shows nutritional values per serving without the additional fillings.</p>
+          <div>
+            <div>
+              <div>Calories</div>
+              <div>277kcal</div>
+            </div>
+            <div>
+              <div>Carbs</div>
+              <div>0g</div>
+            </div>
+            <div>
+              <div>Protein</div>
+              <div>20g</div>
+            </div>
+            <div>
+              <div>Fat</div>
+              <div>22g</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
+  <style>
+
+    @font-face {
+      font-family: "myFont";
+      src: url("assets/fonts/Outfit-Black.ttf");
+    }
+    *, *::after, *::before {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+      outline: 1px solid red;
+      font-family: myFont;
+    }
+
+
+    :root{
+      --nutmeg: hsl(14, 45%, 36%);
+      --ark-Raspberry: hsl(332, 51%, 32%);
+      --white: hsl(0, 0%, 100%);
+      --rosewhite: hsl(330, 100%, 98%);
+      --eggshell: hsl(30, 54%, 90%);
+      --light-grey: hsl(30, 18%, 87%);
+      --wenge-brown: hsl(30, 10%, 34%);
+      --dark-charcoal: hsl(24, 5%, 18%);
+      --body-bg: #f3e5d8;
+    } 
+
+    body{
+      padding-top: clamp(0px, 6vw, 8rem);
+       background-color: var(--body-bg);
+       font-family: url('assets/fonts/Outfit-Black.ttf');
+    }
+
+
+    main{
+      max-width: 75%;
+      background-color: #fff;
+      margin-inline: auto;
+      border-radius: 1.3rem;
+      overflow: hidden;
+      padding: 1rem;
+    }
+    img{
+      width: 100%;
+    }
+     
+
+    </style>
 </html>
