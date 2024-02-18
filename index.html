@@ -94,7 +94,7 @@
             The table below shows nutritional values per serving without the
             additional fillings.
           </p>
-          <div>
+          <div class="container-child">
             <div>
               <div>Calories</div>
               <div>277kcal</div>
@@ -164,6 +164,7 @@
       border-radius: 1.3rem;
       overflow: hidden;
       padding: 1.5rem;
+      margin-bottom: 1rem;
     }
 
     img {
@@ -230,6 +231,54 @@
       }
 
 
-    
+      .sec-4 .container-child{
+        display: flex;
+        flex-direction: column;
+      }
+
+      .sec-4 *{ 
+      }
+
+      .sec-4 .container-child div{
+        display: flex; 
+      }
+
+      .sec-4 .container-child div div:first-of-type{
+        width: 50%; 
+      }
+
+      .sec-4 .container-child div div:nth-child(2){
+        color:var(--nutmeg);
+        font-weight: 600;
+      }
+
+      .sec-4 .container-child > div:not(:last-child){
+        border-bottom: 1px solid rgb(0,0,0,0.5);
+        border-width: 80%;
+        margin-bottom: 0.5rem;
+        padding-bottom: 0.5rem;
+      }
+
+      @media screen and (max-width: 480px) {
+        main {
+      max-width: 100%;
+      margin-bottom: 0px;
+      border-radius: 0px;
+    }
+    body{
+      margin-top: 0px;
+      padding-top: 0px;
+    }
+
+    .image-container{
+      width: 100%;
+      border-radius: 0px;
+    }
+
+
+        
+      }
+
+      
   </style>
 </html>
