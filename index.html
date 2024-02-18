@@ -34,7 +34,7 @@
           <ul>
             <li><strong>Total</strong>: Approximately 10 minutes</li>
             <li><strong>Preparation</strong>: 5 minutes</li>
-            <li><strong>Cooking</strong> 5 minutes</li>
+            <li><strong>Cooking:</strong> 5 minutes</li>
           </ul>
         </div>
       </section>
@@ -57,7 +57,7 @@
       <section class="sec-3">
         <div class="container">
           <h1>Instructions</h1>
-          <ul>
+          <ol>
             <li>
               <strong>Beat the eggs</strong> In a bowl, beat the eggs with a
               pinch of salt and pepper until they are well mixed. You can add a
@@ -83,7 +83,7 @@
               <strong>Enjoy</strong>: Serve hot, with additional salt and pepper
               if needed.
             </li>
-          </ul>
+          </ol>
         </div>
       </section>
 
@@ -131,8 +131,7 @@
     *::before {
       margin: 0px;
       padding: 0px;
-      box-sizing: border-box;
-      outline: 1px solid red;
+      box-sizing: border-box; 
       font-family: Outfit-Light, sans-serif;
     }
 
@@ -142,7 +141,7 @@
 
     :root {
       --nutmeg: hsl(14, 45%, 36%);
-      --ark-Raspberry: hsl(332, 51%, 32%);
+      --ark-raspberry: hsl(332, 51%, 32%);
       --white: hsl(0, 0%, 100%);
       --rosewhite: hsl(330, 100%, 98%);
       --eggshell: hsl(30, 54%, 90%);
@@ -164,10 +163,73 @@
       margin-inline: auto;
       border-radius: 1.3rem;
       overflow: hidden;
-      padding: 1rem;
+      padding: 1.5rem;
     }
+
     img {
       width: 100%;
+      height: 100%;
     }
+
+    .image-container{
+      border-radius: 1.3rem;
+      overflow: hidden;  
+      display: flex;
+      margin-bottom: 1.5rem ;
+    } 
+
+    h1,ul,p{
+        margin-bottom: 1.5rem;
+      } 
+
+      ul,ol{
+        margin-left: 1.3rem;
+      }
+
+      li{
+        padding-block: 0.3rem;
+        padding-left: 1rem;
+      }
+
+      .sec-1 .container{
+        background-color: var(--rosewhite);
+        padding: 1.3rem;  
+        border-radius: 1.3rem;  
+        margin-bottom: 1.5rem;   
+      }
+
+      .sec-1 .container h1{
+        font-family: "Outfit-Light";
+        color: var(--ark-raspberry);
+        margin-bottom: 0.5rem;
+      }
+
+      .sec-1 .container li::marker{
+        color: var(--ark-raspberry);
+      }
+
+      .sec-1 .container li{
+        margin-left: 0.1rem;
+      }
+
+      .sec-1 .container ul{
+        margin-bottom: 0px;
+        padding-left: 0.4rem;   
+      }
+
+      .sec-2 .container li::marker,.sec-3 .container li::marker{
+        color:var(--nutmeg);
+      }
+
+      .sec-2 .container h1, .sec-3 .container h1, .sec-4 .container h1{
+        color:var(--nutmeg);
+      }
+
+      .sec-3 .container ol{ 
+        margin-bottom: 1.3rem;  
+      }
+
+
+    
   </style>
 </html>
